@@ -7,7 +7,7 @@ import { serve } from "inngest/express";
 
 const app = express();
 
-app.unsubscribe(express.json());
+app.use(express.json());
 app.use(clerkMiddleware());
 
 app.use("/api/inngest", serve({ client: inngest, functions }));
