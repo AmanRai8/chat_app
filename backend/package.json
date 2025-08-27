@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "src/server.js",
   "scripts": {
-    "dev": "nodemon src/server.js",
-    "start": "node src/server.js"
+    "dev": "cross-env NODE_OPTIONS=\"--import ./instrument.mjs\" nodemon src/server.js",
+    "start": "NODE_OPTIONS='--import ./instrument.mjs' node src/server.js"
   },
   "keywords": [],
   "author": "",
@@ -13,14 +13,17 @@
   "description": "",
   "dependencies": {
     "@clerk/express": "^1.7.4",
+    "@sentry/node": "^10.1.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "inngest": "^3.40.1",
     "mongoose": "^8.16.5",
-    "serverless-http": "^3.2.0"
+    "serverless-http": "^3.2.0",
+    "stream-chat": "^8.60.0"
   },
   "devDependencies": {
+    "cross-env": "^10.0.0",
     "nodemon": "^3.1.10"
   }
 }
