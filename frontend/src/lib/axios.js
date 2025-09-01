@@ -1,5 +1,3 @@
-//https://chat-app-backend-liard-xi.vercel.app/api
-
 import axios from "axios";
 
 const BASE_URL =
