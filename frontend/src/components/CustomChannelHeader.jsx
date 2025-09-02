@@ -8,7 +8,7 @@ import {
 import { useChannelStateContext } from "stream-chat-react";
 import { useState } from "react";
 import { useUser } from "@clerk/clerk-react";
-import MembersModal from "./MembersModal";
+import MembersModal from "./MemberModal";
 import PinnedMessagesModal from "./PinnedMessagesModal";
 import InviteModal from "./InviteModal";
 
