@@ -57,15 +57,6 @@ const CreateChannelModal = ({ onClose }) => {
     fetchUsers();
   }, [client]);
 
-  // reset the form on open: this is not needed, we just deleted it later in the video
-  // useEffect(() => {
-  //   setChannelName("");
-  //   setDescription("");
-  //   setChannelType("public");
-  //   setError("");
-  //   setSelectedMembers([]);
-  // }, []);
-
   // auto-select all users for public channels
   useEffect(() => {
     if (channelType === "public") setSelectedMembers(users.map((u) => u.id));

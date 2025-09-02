@@ -11,7 +11,6 @@ const InviteModal = ({ channel, onClose }) => {
   const [error, setError] = useState("");
   const [isInviting, setIsInviting] = useState(false);
 
-  // we could have done this with tanstack query, but to keep it simple, we're using useEffect here...
   useEffect(() => {
     const fetchUsers = async () => {
       setIsLoadingUsers(true);
