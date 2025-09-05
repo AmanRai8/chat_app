@@ -44,17 +44,6 @@ const AuthPage = () => {
           </SignInButton>
         </div>
       </div>
-
-      <div className="auth-right">
-        <div className="auth-image-container">
-          <img
-            src="/auth-i.png"
-            alt="Team collaboration"
-            className="auth-image"
-          />
-          <div className="image-overlay"></div>
-        </div>
-      </div>
     </div>
   );
 };

@@ -75,7 +75,7 @@ const CallPage = () => {
   }
 
   return (
-    <div className="h-screen flex flex-col items-center justify-center bg-gray-100">
+    <div className="h-screen flex flex-col items-center justify-center bg-gray-700">
       <div className="relative w-full max-w-4xl mx-auto">
         {client && call ? (
           <StreamVideo client={client}>
