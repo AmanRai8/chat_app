@@ -57,11 +57,10 @@ Think of it as a **lightweight Slack alternative** – simple, fast, and designe
 
 ```bash
 # Clone the repo
-git clone https://github.com/AmanRai8/worktalk.git
+git clone https://github.com/AmanRai8/chat_app.git
 
 # Move into project
-cd worktalk
-
+cd chat_app
 # Install dependencies
 npm install
 
