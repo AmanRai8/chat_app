@@ -1,0 +1,282 @@
+/* call-page-theme.css */
+@import "stream-chat-react/dist/css/v2/index.css";
+
+/* Shared CSS Variables (copy from stream-chat-theme.css) */
+:root {
+  --primary-color: #00ccff;
+  --primary-color-alpha: #0066cc;
+  --secondary-color: #0099ff;
+  --gray-wash: #001122;
+  --white: #ffffff;
+  --black: #000000;
+  --primary-text: #e6f7ff;
+  --secondary-text: #99ccff;
+  --border-radius-md: 8px;
+  --border-radius-sm: 4px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+}
+
+/* Call Page Background */
+.call-page-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(
+      125deg,
+      #0a0a0a 0%,
+      #001122 25%,
+      #003366 50%,
+      #0066cc 75%,
+      #00ccff 100%
+    ),
+    radial-gradient(
+      ellipse at top left,
+      rgba(0, 255, 255, 0.15) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at bottom right,
+      rgba(0, 102, 255, 0.15) 0%,
+      transparent 50%
+    );
+  position: relative;
+  overflow: hidden;
+}
+
+.call-page-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(
+      1px 1px at 25px 35px,
+      rgba(0, 255, 255, 0.4),
+      transparent
+    ),
+    radial-gradient(1px 1px at 85px 75px, rgba(0, 204, 255, 0.3), transparent),
+    radial-gradient(1px 1px at 145px 45px, rgba(0, 153, 255, 0.3), transparent);
+  background-repeat: repeat;
+  background-size: 250px 120px;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* Loading/Error States */
+.call-loading-container {
+  background: rgba(0, 255, 255, 0.05);
+  border-radius: 1rem;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  padding: 2rem;
+  color: rgba(230, 247, 255, 0.95);
+  box-shadow: 0 8px 25px rgba(0, 102, 255, 0.15);
+}
+
+.call-error-message {
+  background: rgba(255, 99, 132, 0.1);
+  border: 1px solid rgba(255, 99, 132, 0.3);
+  border-radius: 1rem;
+  color: rgba(255, 180, 180, 0.95);
+  padding: 1.5rem;
+  backdrop-filter: blur(15px);
+}
+
+/* Stream Video Component Styling */
+
+/* Main participant view container */
+.str-video__participant-view {
+  background: rgba(5, 20, 40, 0.9) !important;
+  border: 1px solid rgba(0, 255, 255, 0.2) !important;
+  border-radius: 12px !important;
+  backdrop-filter: blur(15px) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), 0 4px 15px rgba(0, 102, 255, 0.15) !important;
+  overflow: hidden !important;
+}
+
+.str-video__participant-view--dominant-speaker {
+  border: 1px solid rgba(0, 255, 255, 0.4) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), 0 4px 15px rgba(0, 204, 255, 0.25),
+    0 0 30px rgba(0, 255, 255, 0.15) !important;
+}
+
+/* Video element styling */
+.str-video__video {
+  border-radius: 12px !important;
+}
+
+/* Call controls button */
+.str-video__call-controls__button {
+  background: rgba(0, 255, 255, 0.1) !important;
+  border: 1px solid rgba(0, 255, 255, 0.25) !important;
+  color: rgba(230, 247, 255, 0.9) !important;
+  border-radius: 8px !important;
+  backdrop-filter: blur(10px) !important;
+  transition: all 0.3s ease !important;
+}
+
+.str-video__call-controls__button:hover {
+  background: rgba(0, 255, 255, 0.15) !important;
+  border: 1px solid rgba(0, 255, 255, 0.4) !important;
+  color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 4px 15px rgba(0, 102, 255, 0.2), 0 0 20px rgba(0, 204, 255, 0.1) !important;
+  transform: scale(1.05) !important;
+}
+
+/* Participant details container */
+.str-video__participant-details {
+  background: rgba(0, 17, 34, 0.85) !important;
+  border-radius: 8px !important;
+  padding: 8px 12px !important;
+  backdrop-filter: blur(15px) !important;
+  border: 1px solid rgba(0, 255, 255, 0.2) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Participant name styling */
+.str-video__participant-details__name {
+  color: rgba(230, 247, 255, 0.95) !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Speech indicator styling */
+.str-video__speech-indicator {
+  margin-left: 8px !important;
+}
+
+.str-video__speech-indicator--dominant .str-video__speech-indicator__bar {
+  background: rgba(0, 255, 255, 0.8) !important;
+  box-shadow: 0 0 4px rgba(0, 204, 255, 0.5) !important;
+}
+
+.str-video__speech-indicator__bar {
+  background: rgba(0, 204, 255, 0.6) !important;
+  border-radius: 2px !important;
+}
+
+/* Connection quality indicator */
+.str-video__participant-details__connection-quality {
+  background: rgba(0, 17, 34, 0.85) !important;
+  border: 1px solid rgba(0, 255, 255, 0.2) !important;
+  border-radius: 6px !important;
+  padding: 4px 6px !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.str-video__participant-details__connection-quality--excellent {
+  color: rgba(0, 255, 128, 0.9) !important;
+  border-color: rgba(0, 255, 128, 0.3) !important;
+  box-shadow: 0 0 8px rgba(0, 255, 128, 0.2) !important;
+}
+
+/* Video controls and UI elements */
+.str-video__icon {
+  color: rgba(230, 247, 255, 0.8) !important;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3)) !important;
+}
+
+.str-video__call-controls__button:hover .str-video__icon {
+  color: rgba(255, 255, 255, 1) !important;
+  filter: drop-shadow(0 0 4px rgba(0, 204, 255, 0.4)) !important;
+}
+
+/* Video Menu Component */
+.str-video__menu-container {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 17, 34, 0.95) 0%,
+    rgba(0, 51, 102, 0.95) 25%,
+    rgba(0, 102, 204, 0.95) 50%,
+    rgba(0, 51, 102, 0.95) 75%,
+    rgba(0, 17, 34, 0.95) 100%
+  ) !important;
+  backdrop-filter: blur(25px) !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(0, 255, 255, 0.3) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+    0 10px 20px rgba(0, 204, 255, 0.15), inset 0 1px 0 rgba(0, 255, 255, 0.15) !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  animation: menuFadeIn 0.2s ease-out !important;
+  z-index: 9999 !important;
+  min-width: 200px !important;
+  max-height: 400px !important;
+}
+
+@keyframes menuFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.str-video__generic-menu {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 8px !important;
+}
+
+.str-video__generic-menu--item {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.str-video__generic-menu--item button {
+  width: 100% !important;
+  padding: 12px 16px !important;
+  background: transparent !important;
+  border: none !important;
+  color: rgba(230, 247, 255, 0.9) !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  text-align: left !important;
+  cursor: pointer !important;
+  border-radius: 8px !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.str-video__generic-menu--item button::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  width: 0 !important;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 255, 0.2) 0%,
+    rgba(0, 204, 255, 0.1) 100%
+  ) !important;
+  transition: width 0.3s ease !important;
+  border-radius: 0 4px 4px 0 !important;
+}
+
+.str-video__generic-menu--item button:hover {
+  background: rgba(0, 255, 255, 0.1) !important;
+  color: rgba(255, 255, 255, 1) !important;
+  transform: translateX(4px) !important;
+  box-shadow: 0 4px 15px rgba(0, 102, 255, 0.2), 0 0 20px rgba(0, 204, 255, 0.1) !important;
+}
+
+.str-video__generic-menu--item button:hover::before {
+  width: 3px !important;
+}
+
+.str-video__generic-menu--item button:active {
+  transform: translateX(2px) scale(0.98) !important;
+  background: rgba(0, 255, 255, 0.15) !important;
+}

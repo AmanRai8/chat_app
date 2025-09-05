@@ -89,11 +89,11 @@ const HomePage = () => {
                   <div className="brand-container flex items-center gap-2">
                     <img
                       src="/logo.png"
-                      alt="Logo"
+                      alt="WorkTalk Logo"
                       className="brand-logo w-8 h-8"
                     />
                     <span className="brand-name font-bold text-lg text-indigo-600">
-                      Slap
+                      WorkTalk
                     </span>
                   </div>
                   <div className="user-button-wrapper">
@@ -184,15 +184,15 @@ const HomePage = () => {
                   <div className="flex-1 flex flex-col items-center justify-center text-center p-6">
                     <img
                       src="/logo.png"
-                      alt="Chat Illustration"
+                      alt="WorkTalk Illustration"
                       className="w-40 mb-4 opacity-80"
                     />
                     <h2 className="text-2xl font-bold text-indigo-600">
-                      Welcome to Slap 🎉
+                      Welcome to WorkTalk 🎉
                     </h2>
                     <p className="text-gray-500 mt-2 max-w-sm">
-                      Select a channel from the sidebar or start a new
-                      conversation to begin chatting.
+                      Select a channel from the sidebar or create a new one to
+                      start collaborating with your team.
                     </p>
                   </div>
                 )

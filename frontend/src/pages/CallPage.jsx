@@ -16,8 +16,8 @@ import {
   CallingState,
   useCallStateHooks,
 } from "@stream-io/video-react-sdk";
-import "../styles/stream-chat-theme.css";
 import "@stream-io/video-react-sdk/dist/css/styles.css";
+import "../styles/call-page-theme.css";
 
 const STREAM_API_KEY = import.meta.env.VITE_STREAM_API_KEY;
 
@@ -75,7 +75,7 @@ const CallPage = () => {
   }
 
   return (
-    <div className="h-screen flex flex-col items-center justify-center bg-slate-100">
+    <div className="h-screen flex flex-col items-center justify-center bg-slate-900">
       <div className="relative w-full max-w-4xl mx-auto">
         {client && call ? (
           <StreamVideo client={client}>
