@@ -28,25 +28,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3rem;
-  position: relative;
-}
-
-.auth-right {
-  flex: 0.8;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 2rem;
+  position: relative;
 }
 
 .auth-hero {
   max-width: 500px;
   color: white;
   z-index: 2;
-  padding: 3rem;
+  padding: 2rem;
   background: rgba(0, 255, 255, 0.03);
   border-radius: 2rem;
   backdrop-filter: blur(25px);
@@ -85,7 +75,7 @@
 }
 
 .hero-title {
-  font-size: 3.5rem;
+  font-size: 2rem;
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 1rem;
@@ -98,7 +88,7 @@
 }
 
 .hero-subtitle {
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 2rem;
   opacity: 0.9;
@@ -206,42 +196,6 @@
   transform: translateX(0.25rem);
 }
 
-/* .auth-image-container {
-  position: relative;
-  max-width: 480px;
-  max-height: 600px;
-  width: 100%;
-  border-radius: 2rem;
-  overflow: hidden;
-  box-shadow: 0 30px 60px rgba(0, 102, 255, 0.25),
-    0 15px 30px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(0, 255, 255, 0.2),
-    0 0 40px rgba(0, 204, 255, 0.15);
-  animation: float 6s ease-in-out infinite;
-  border: 1px solid rgba(0, 255, 255, 0.3);
-}
-
-.auth-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  filter: brightness(1.1) contrast(1.2) saturate(1.1);
-} */
-
-/* .image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    45deg,
-    rgba(0, 102, 255, 0.15),
-    rgba(0, 204, 255, 0.1)
-  );
-} */
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .auth-container {
@@ -249,26 +203,16 @@
   }
 
   .auth-left {
-    padding: 2rem 1.5rem;
+    padding: 1.5rem;
   }
 
   .auth-hero {
-    padding: 2rem;
-  }
-
-  .auth-right {
-    min-height: 40vh;
-    padding: 1rem;
-  }
-
-  .auth-image-container {
-    max-width: 360px;
-    max-height: 420px;
-    animation: float 5s ease-in-out infinite;
+    padding: 1.5rem;
+    max-width: 90%;
   }
 
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .brand-name {

@@ -851,8 +851,8 @@
 }
 
 .str-chat__message-simple__text {
-  background: rgba(0, 25, 50, 0.85) !important;
-  color: rgba(230, 247, 255, 0.95) !important;
+  background: rgba(0, 0, 0, 0.85) !important;
+  color: rgba(0, 0, 0, 0.95) !important;
   padding: 0.75rem 1rem !important;
   border-radius: 1rem !important;
   border: 1px solid rgba(0, 204, 255, 0.25) !important;
@@ -864,7 +864,7 @@
 }
 
 .str-chat__message-simple__text p {
-  color: rgba(230, 247, 255, 0.95) !important;
+  color: rgba(0, 0, 0, 0.95) !important;
   margin: 0 !important;
 }
 
@@ -909,24 +909,36 @@
 
 /* Own messages (sent by current user) - enhanced styling for better visibility */
 .str-chat__message-simple--me .str-chat__message-simple__text {
-  background: rgba(0, 51, 102, 0.9) !important;
+  background: rgba(0, 0, 0, 0.9) !important;
   border: 1px solid rgba(0, 255, 255, 0.35) !important;
-  color: rgba(255, 255, 255, 0.98) !important;
+  color: rgba(0, 0, 0, 0.98) !important;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 204, 255, 0.25) !important;
 }
 
 .str-chat__message-simple--me .str-chat__message-simple__text p {
-  color: rgba(255, 255, 255, 0.98) !important;
+  color: rgba(0, 0, 0, 0.98) !important;
 }
 
-/* Deleted message styling */
-.str-chat__message--deleted .str-chat__message-simple__text {
-  background: rgba(128, 128, 128, 0.2) !important;
-  color: rgba(153, 204, 255, 0.5) !important;
+/* Deleted Messages */
+.str-chat__message--deleted {
+  opacity: 0.6 !important;
+}
+
+.str-chat__message--deleted-inner {
+  background: rgba(60, 60, 60, 0.4) !important;
+  color: rgba(153, 153, 153, 0.8) !important;
   font-style: italic !important;
-  border: 1px solid rgba(128, 128, 128, 0.15) !important;
+  padding: 8px 12px !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(128, 128, 128, 0.2) !important;
+  backdrop-filter: blur(10px) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
 }
 
+.str-chat__message--deleted:hover .str-chat__message--deleted-inner {
+  background: rgba(60, 60, 60, 0.5) !important;
+  border: 1px solid rgba(128, 128, 128, 0.3) !important;
+}
 /* Message hover effects */
 .str-chat__message-simple:hover .str-chat__message-simple__text {
   background: rgba(0, 25, 50, 0.95) !important;
@@ -990,9 +1002,54 @@
   text-shadow: 0 2px 10px rgba(0, 255, 255, 0.3) !important;
 }
 
-.chat-main p {
-  color: rgba(153, 204, 255, 0.8) !important;
+.str-chat__message-bubble {
+  background: rgba(5, 35, 65, 0.9) !important;
+  border: 1px solid rgba(0, 255, 255, 0.2) !important;
+  border-radius: 12px !important;
+  backdrop-filter: blur(15px) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 102, 255, 0.15) !important;
 }
+
+/* Message Text Color */
+.str-chat__message-text {
+  color: rgba(240, 250, 255, 0.95) !important;
+}
+
+.str-chat__message-text-inner p {
+  color: rgba(240, 250, 255, 0.95) !important;
+  margin: 0 !important;
+}
+
+/* Your Own Messages - Different Background */
+.str-chat__message--me .str-chat__message-bubble {
+  background: rgba(0, 60, 120, 0.85) !important;
+  border: 1px solid rgba(0, 255, 255, 0.35) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 204, 255, 0.25) !important;
+}
+
+.str-chat__message--me .str-chat__message-text {
+  color: rgba(255, 255, 255, 0.98) !important;
+}
+
+.str-chat__message--me .str-chat__message-text-inner p {
+  color: rgba(255, 255, 255, 0.98) !important;
+}
+
+/* Hover Effects */
+.str-chat__message-bubble:hover {
+  background: rgba(5, 35, 65, 0.95) !important;
+  border: 1px solid rgba(0, 255, 255, 0.4) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4), 0 3px 12px rgba(0, 102, 255, 0.2) !important;
+}
+
+.str-chat__message--me .str-chat__message-bubble:hover {
+  background: rgba(0, 60, 120, 0.95) !important;
+  border: 1px solid rgba(0, 255, 255, 0.5) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4), 0 3px 12px rgba(0, 204, 255, 0.3) !important;
+}
+
+
 
 .radio-option {
   display: flex;
