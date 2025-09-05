@@ -206,7 +206,7 @@
   transform: translateX(0.25rem);
 }
 
-.auth-image-container {
+/* .auth-image-container {
   position: relative;
   max-width: 480px;
   max-height: 600px;
@@ -227,9 +227,9 @@
   object-position: center;
   display: block;
   filter: brightness(1.1) contrast(1.2) saturate(1.1);
-}
+} */
 
-.image-overlay {
+/* .image-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -240,7 +240,7 @@
     rgba(0, 102, 255, 0.15),
     rgba(0, 204, 255, 0.1)
   );
-}
+} */
 
 /* Responsive Design */
 @media (max-width: 768px) {
