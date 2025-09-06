@@ -3,17 +3,17 @@
 # 🚀 WorkTalk – Where Work Happens ✨
 
 <p align="center">
-  <a href="https://github.com/AmanRai8/WorkTalk/stargazers">
-    <img src="https://img.shields.io/github/stars/AmanRai8/WorkTalk?style=social&label=Stars&color=yellow" alt="Stars">
+  <a href="https://github.com/AmanRai8/chat_app/stargazers">
+    <img src="https://img.shields.io/github/stars/AmanRai8/chat_app?style=social&label=Stars&color=yellow" alt="Stars">
   </a>
-  <a href="https://github.com/AmanRai8/WorkTalk/network/members">
-    <img src="https://img.shields.io/github/forks/AmanRai8/WorkTalk?style=social&label=Forks&color=blue" alt="Forks">
+  <a href="https://github.com/AmanRai8/chat_app/network/members">
+    <img src="https://img.shields.io/github/forks/AmanRai8/chat_app?style=social&label=Forks&color=blue" alt="Forks">
   </a>
-  <a href="https://github.com/AmanRai8/WorkTalk/issues">
-    <img src="https://img.shields.io/github/issues/AmanRai8/WorkTalk?color=red" alt="Issues">
+  <a href="https://github.com/AmanRai8/chat_app/issues">
+    <img src="https://img.shields.io/github/issues/AmanRai8/chat_app?color=red" alt="Issues">
   </a>
-  <a href="https://github.com/AmanRai8/WorkTalk/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/AmanRai8/WorkTalk?color=green" alt="License">
+  <a href="https://github.com/AmanRai8/chat_app/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/AmanRai8/chat_app?color=green" alt="License">
   </a>
 </p>
 WorkTalk is a modern **team collaboration app** built with the **MERN stack** and powered by **Clerk, Stream, Inngest, and Sentry**.  
