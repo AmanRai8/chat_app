@@ -33,11 +33,21 @@ Think of it as a **lightweight Slack alternative** – simple, fast, and designe
 
 ---
 
-## 🖼️ Demo Preview
+## 📸 Screenshots
 
-<img src="frontend/public/1.png" alt="WorkTalk demo" width="1500" height="320">
+### Auth Page
 
----
+<img src="frontend/public/authPage.png" alt="WorkTalk demo" width="1500" height="320">
+
+### Chat Page
+
+<img src="frontend/public/chatPage.png" alt="WorkTalk demo" width="1500" height="320">
+
+### Call Page
+
+<img src="frontend/public/callPage.png" alt="WorkTalk demo" width="1500" height="320">
+
+## [⬆ Back to Top](#-worktalk--where-work-happens-)
 
 ## 🛠️ Tech Stack
 
@@ -57,14 +67,40 @@ Think of it as a **lightweight Slack alternative** – simple, fast, and designe
 
 ```bash
 # Clone the repo
-git clone https://github.com/AmanRai8/worktalk.git
+git clone https://github.com/AmanRai8/chat_app.git
 
 # Move into project
-cd worktalk
+cd chat_app
 
 # Install dependencies
 npm install
+```
+
+## 🔑 Environment Variables
+
+Create a `.env` file in the root and add:
+
+```bash
+VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+VITE_STREAM_API_KEY=your_stream_api_key
+VITE_SENTRY_DSN=your_sentry_dsn_key
+VITE_API_BASE_URL=your_api_base_url
+```
 
 # Start dev server
+
+```bash
 npm run dev
 ```
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repo
+2. Create a new branch (`git checkout -b feature-branch`)
+3. Commit changes (`git commit -m "Added new feature"`)
+4. Push (`git push origin feature-branch`)
+5. Open a Pull Request
+
+## [⬆ Back to Top](#-worktalk--where-work-happens-)
