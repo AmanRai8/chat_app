@@ -21,6 +21,7 @@ import CreateChannelModal from "../components/CreateChannelModel";
 import CustomChannelHeader from "../components/CustomChannelHeader";
 import CustomChannelPreview from "../components/CustomChannelPreview";
 import UsersList from "../components/UserList";
+import LogoLink from "../components/LogoLink";
 
 const HomePage = () => {
   const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);
@@ -87,11 +88,8 @@ const HomePage = () => {
                 {/* HEADER */}
                 <div className="team-channel-list__header gap-4 p-3 flex items-center justify-between border-b border-gray-200">
                   <div className="brand-container flex items-center gap-2">
-                    <img
-                      src="/logo.png"
-                      alt="WorkTalk Logo"
-                      className="brand-logo w-8 h-8"
-                    />
+                    <LogoLink />
+
                     <span className="brand-name font-bold text-lg text-indigo-600">
                       WorkTalk
                     </span>
